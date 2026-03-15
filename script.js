@@ -1,30 +1,42 @@
-  const lines = [
-    "Hey! I'm Sarthki, a CSE student who loves turning ideas into code.",
-    "On a journey through algorithms, design, and innovation as a Computer Science student.",
-    "From algorithms to web apps, I enjoy creating projects that matter.",
-    "Always curious, always learning, and always coding!"
-  ];
+const lines = [
+  "Hey! I'm Sarthki, a CSE student who loves turning ideas into code.",
+  "Exploring algorithms, web development, and system design.",
+  "Building projects with JavaScript, Python, and data analysis tools.",
+  "Always learning, always building, always improving."
+];
+
 const textElement = document.getElementById("introText");
-  let currentLine = 0;
 
-  function showNextLine() {
-    // Fade out text
-    textElement.style.opacity = 0;
+let currentLine = 0;
 
-    setTimeout(() => {
-      // Update text
-      textElement.textContent = lines[currentLine];
-      // Fade in text
-      textElement.style.opacity = 1;
+function showNextLine() {
 
-      // Move to next line
-      currentLine = (currentLine + 1) % lines.length;
-    }, 500); // matches CSS transition
+  textElement.style.opacity = 0;
+
+  setTimeout(() => {
+
+    textElement.textContent = lines[currentLine];
+
+    textElement.style.opacity = 1;
+
+    currentLine = (currentLine + 1) % lines.length;
+
+  }, 500);
+}
+
+textElement.textContent = lines[currentLine];
+currentLine++;
+
+let interval = setInterval(showNextLine, 3000);
+
+/* pause animation if tab not active (performance improvement) */
+
+document.addEventListener("visibilitychange", () => {
+
+  if (document.hidden) {
+    clearInterval(interval);
+  } else {
+    interval = setInterval(showNextLine, 3000);
   }
 
-  // Show first line immediately
-  textElement.textContent = lines[currentLine];
-  currentLine = (currentLine + 1) % lines.length;
-
-  // Repeat every 3 seconds
-  setInterval(showNextLine, 3000);
+});
