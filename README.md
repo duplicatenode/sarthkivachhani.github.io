@@ -1,5 +1,4 @@
-# sarthkivachhani.github.io
+# Personal portfolio website
 
 https://sarthkivachhani-github-io.vercel.app/
 
-Personal portfolio website
