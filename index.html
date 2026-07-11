@@ -753,9 +753,9 @@
     <h1 class="hero-name">
       Sarthki<br /><em>Vachhani</em>
     </h1>
-    <p class="hero-sub">Full Stack Developer<br />Data Analyst<br />AI Enthusiast</p>
+    <p class="hero-sub">Software Engineer<br />Systems Programmer<br />Full Stack Developer</p>
     <p class="hero-desc">
-      CS undergraduate at PES University, Bangalore. Building production-ready web applications, AI-driven platforms, and interactive data dashboards. Passionate about systems thinking and clean code.
+      CS undergraduate at PES University, Bangalore. Building production-grade systems across the stack — from a Linux container runtime with kernel-level process isolation to distributed backend infrastructure. Passionate about systems thinking and clean code.
     </p>
     <div class="hero-cta">
       <a href="#projects" class="btn-primary"><span>View Projects</span></a>
@@ -770,11 +770,11 @@
       <div class="float-tags">
         <span class="float-tag">React</span>
         <span class="float-tag">Python</span>
-        <span class="float-tag">Node.js</span>
-        <span class="float-tag">Next.js</span>
-        <span class="float-tag">Streamlit</span>
+        <span class="float-tag">FastAPI</span>
+        <span class="float-tag">Redis</span>
+        <span class="float-tag">PostgreSQL</span>
+        <span class="float-tag">C</span>
         <span class="float-tag">Linux</span>
-        <span class="float-tag">OpenCV</span>
       </div>
     </div>
   </div>
@@ -783,17 +783,17 @@
 <!-- About -->
 <section class="about" id="about">
   <div class="section-label">About</div>
-  <h2 class="section-title">Builder, <em>analyst,</em><br />tinkerer.</h2>
+  <h2 class="section-title">Builder, <em>engineer,</em><br />tinkerer.</h2>
   <div class="about-grid">
     <div class="about-left reveal">
       <p class="about-text">
-        I'm a <span class="about-highlight">Computer Science undergraduate at PES University</span>, Bangalore, where I build at the intersection of full-stack development, data analytics, and systems programming.
+        I'm a <span class="about-highlight">Computer Science undergraduate at PES University</span>, Bangalore, where I build at the intersection of systems programming, backend infrastructure, and full-stack development.
       </p>
       <p class="about-text">
-        From designing <span class="about-highlight">container runtimes in C</span> that mimic Docker internals, to building <span class="about-highlight">AI-powered insurance platforms for gig workers</span>, I thrive on problems that require depth — both technical and conceptual.
+        From designing <span class="about-highlight">container runtimes in C</span> that mimic Docker internals, to building a <span class="about-highlight">distributed task queue with Redis and PostgreSQL</span>, to building <span class="about-highlight">AI-powered insurance platforms for gig workers</span>, I thrive on problems that require depth — both technical and conceptual.
       </p>
       <p class="about-text">
-        I'm actively seeking <span class="about-highlight">internship opportunities</span> in software engineering, full-stack development, or data analytics where I can contribute real impact to real products.
+        I'm actively seeking <span class="about-highlight">software engineering internships</span> in backend, full-stack, or systems roles where I can contribute real impact to real products.
       </p>
       <div class="divider"></div>
       <div class="achievement-card reveal reveal-delay-1">
@@ -830,7 +830,7 @@
         <span class="skill-pill">Python</span>
         <span class="skill-pill">JavaScript</span>
         <span class="skill-pill">C</span>
-        <span class="skill-pill">Embedded C</span>
+        <span class="skill-pill">C++</span>
       </div>
     </div>
     <div class="skill-group reveal reveal-delay-1">
@@ -849,22 +849,24 @@
       <div class="skill-group-icon">🔧</div>
       <div class="skill-group-title">Backend & APIs</div>
       <div class="skill-pills">
+        <span class="skill-pill">FastAPI</span>
         <span class="skill-pill">Node.js</span>
         <span class="skill-pill">REST APIs</span>
-        <span class="skill-pill">JSON/CSV Parsing</span>
+        <span class="skill-pill">Redis</span>
+        <span class="skill-pill">PostgreSQL</span>
+        <span class="skill-pill">Asyncpg</span>
         <span class="skill-pill">ETL Pipelines</span>
         <span class="skill-pill">Data Modeling</span>
       </div>
     </div>
     <div class="skill-group reveal">
-      <div class="skill-group-icon">📊</div>
-      <div class="skill-group-title">Data & ML</div>
+      <div class="skill-group-icon">🧠</div>
+      <div class="skill-group-title">ML & Libraries</div>
       <div class="skill-pills">
+        <span class="skill-pill">OpenCV</span>
+        <span class="skill-pill">Isolation Forest</span>
         <span class="skill-pill">Pandas</span>
         <span class="skill-pill">NumPy</span>
-        <span class="skill-pill">Matplotlib</span>
-        <span class="skill-pill">Streamlit</span>
-        <span class="skill-pill">Isolation Forest</span>
       </div>
     </div>
     <div class="skill-group reveal reveal-delay-1">
@@ -895,7 +897,7 @@
 <section class="projects" id="projects">
   <div class="section-label">Work</div>
   <h2 class="section-title">Selected <em>projects</em></h2>
-  <p class="projects-intro">A range of work spanning AI platforms, systems programming, data analytics, and hardware.</p>
+  <p class="projects-intro">A range of work spanning systems programming, backend infrastructure, and full-stack engineering.</p>
 
   <div class="projects-grid">
 
@@ -927,6 +929,23 @@
     <!-- Project 2 -->
     <div class="project-card reveal">
       <div class="project-num">02</div>
+      <h3 class="project-title">Distributed Task Queue</h3>
+      <p class="project-desc">
+        A distributed task queue built from scratch in Python — no queue frameworks — implementing a producer-consumer architecture with Redis as the broker and PostgreSQL for persistent job state.
+      </p>
+      <div class="project-tech">
+        <span class="tech-tag">Python</span>
+        <span class="tech-tag">FastAPI</span>
+        <span class="tech-tag">Redis</span>
+        <span class="tech-tag">PostgreSQL</span>
+        <span class="tech-tag">Asyncpg</span>
+        <span class="tech-tag">React</span>
+      </div>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="project-card reveal reveal-delay-1">
+      <div class="project-num">03</div>
       <h3 class="project-title">Multi-Container Runtime</h3>
       <p class="project-desc">
         A Linux-based container runtime built from scratch in C, implementing process isolation, scheduling, and resource control — mirroring core Docker internals.
@@ -941,34 +960,19 @@
       </div>
     </div>
 
-    <!-- Project 3 -->
-    <div class="project-card reveal reveal-delay-1">
-      <div class="project-num">03</div>
-      <h3 class="project-title">Netflix Data Analysis Dashboard</h3>
-      <p class="project-desc">
-        Interactive Streamlit dashboard analyzing 8,800+ titles with dynamic filters, rich visualizations, and a complete ETL pipeline from raw CSV to rendered insight.
-      </p>
-      <div class="project-tech">
-        <span class="tech-tag">Python</span>
-        <span class="tech-tag">Pandas</span>
-        <span class="tech-tag">NumPy</span>
-        <span class="tech-tag">Streamlit</span>
-        <span class="tech-tag">ETL Pipeline</span>
-      </div>
-    </div>
-
     <!-- Project 4 -->
     <div class="project-card reveal">
       <div class="project-num">04</div>
-      <h3 class="project-title">Quick-It — Quick Commerce Web App</h3>
+      <h3 class="project-title">FinanceOS — SaaS Finance Dashboard</h3>
       <p class="project-desc">
-        Production-grade e-commerce frontend with cart state, real-time search, client-side filtering, and Vite-optimized performance. Fully responsive across all device sizes.
+        A multi-user SaaS finance tracking dashboard with email authentication, real-time data persistence, transaction management, and interactive spending visualizations.
       </p>
       <div class="project-tech">
         <span class="tech-tag">React</span>
-        <span class="tech-tag">Vite</span>
-        <span class="tech-tag">JavaScript</span>
-        <span class="tech-tag">CSS</span>
+        <span class="tech-tag">Tailwind CSS</span>
+        <span class="tech-tag">Supabase</span>
+        <span class="tech-tag">Recharts</span>
+        <span class="tech-tag">Vercel</span>
       </div>
     </div>
 
@@ -983,20 +987,7 @@
         <span class="tech-tag">Python</span>
         <span class="tech-tag">SpeechRecognition</span>
         <span class="tech-tag">OpenCV</span>
-      </div>
-    </div>
-
-    <!-- Project 6 -->
-    <div class="project-card reveal reveal-delay-2">
-      <div class="project-num">06</div>
-      <h3 class="project-title">Voice-Controlled Home Lighting</h3>
-      <p class="project-desc">
-        Embedded smart lighting system on Arduino UNO with voice recognition, relay-based switching, LDR, IR, and DHT11 sensors. Includes manual override and environmental awareness.
-      </p>
-      <div class="project-tech">
-        <span class="tech-tag">Arduino</span>
-        <span class="tech-tag">Embedded C</span>
-        <span class="tech-tag">Sensors</span>
+        <span class="tech-tag">WebSocket</span>
       </div>
     </div>
 
@@ -1009,7 +1000,7 @@
   <div class="contact-inner">
     <h2 class="contact-big">Let's build something<br /><em>meaningful.</em></h2>
     <p class="contact-sub">
-      I'm actively looking for internship opportunities in software engineering, full-stack development, AI enginnering and data. If you think I'd be a fit, I'd love to hear from you.
+      I'm actively looking for internship opportunities in software engineering, backend, and full-stack development. If you think I'd be a fit, I'd love to hear from you.
     </p>
     <a href="mailto:sarthkivachhani@gmail.com" class="contact-email">sarthkivachhani@gmail.com</a>
     <p class="contact-phone">+91 96328 32055 · Bangalore, India</p>
@@ -1022,7 +1013,7 @@
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
         LinkedIn
       </a>
-      <a href="sarthki_resume.pdf" download class="contact-link">
+      <a href="sarthki_resume (2)" download class="contact-link">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
         Resume
       </a>
